@@ -4,4 +4,5 @@ title: Welcome
 ---
 
 Welcome to Azure sales accelerator demo kit. This pages shows you how to get started using Azure sales accelerator demo kit, please click each demo to start.
-![A test image](../img/logo.png) 
+
+![Welcome](../img/logo.png) 
