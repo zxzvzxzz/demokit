@@ -10,5 +10,12 @@ module.exports = {
         'kubernetes-devops/argocd',
       ]
     },
+    {
+      'Azure Networking': [
+        'azure-networking/index',
+        'azure-networking/hub-spoke',
+      ]
+    },
+
   ]
 };
