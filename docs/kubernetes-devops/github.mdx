@@ -5,20 +5,12 @@ title: "Github Actions"
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Github Actions Demo Scenarios
-Github devops demo leverages github actions to build application, generate docker image, push image to azure container registry, and deploy image to AKS. It includes below actions
-- Github actions implemented pipleline
-- Canary deployment
-- Codeql to scan code triggered by push or schedule
-
-This demo supports below scenarios
-- DevOps pipeline – build & deploy
+Github devops demo leverages github actions to build application, generate docker image, push image to azure container registry, and deploy image to AKS. This demo supports below scenarios
+- Github actions pipeline – build & deploy
 - Canary deployment on AKS
-- Roll back on error to successful deployment
+- Roll back on error to previous successful deployment
 
-To use this demo, follow below steps to open 3 webpages
-1. Open [webpage 1](http://vote-github.k8s.devsecops.ink/), this is sample vote demo application which is deployed to AKS already, currently, its version is `Azure Voting App - Github Actions(v1)`, highlight application version to your customer, lately the version will get changed to `Azure Voting App – Github Actions(v2)`
-2. Open [webpage 2](https://github.com/devopsonazure/vote-github/blob/master/azure-vote/config_file.cfg), this is sample application configuration file, we are going to change the configuration, rebuild and deploy it to AKS with github actions.
-3. Open [webpage 3](https://github.com/devopsonazure/vote-github/actions), this is github actions page, the build & deploy workflows will be shown here.
+To use this demo, follow "Demo Steps" in below section
 
 ## Demo Steps
 ### Github Actions Pipeline
