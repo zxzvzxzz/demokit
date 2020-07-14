@@ -73,7 +73,7 @@ module.exports = {
   plugins: [
     [require.resolve('@cmfcmf/docusaurus-search-local'), { // warning: Use '@cmfcmf/docusaurus-search-local' (without the require.resolve) if you use Docusaurus before v2.0.0-alpha.56
       // Options here
-      docsBasePath: '/demokit/docs', // must correspond to the base path configured for the docs plugin
+      docsBasePath: '/docs', // must correspond to the base path configured for the docs plugin
       indexBlog: false, // whether to index blog pages
       indexDocs: true, // whether to index docs pages
       indexPages: false, // whether to index static pages
