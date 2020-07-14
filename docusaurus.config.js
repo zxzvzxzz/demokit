@@ -48,11 +48,24 @@ module.exports = {
     footer: {
       links: [
         {
+          title: 'Demos',
+          items: [
+            {
+              label: 'Kubernetes DevOps',
+              href: 'docs/kubernetes-devops/index'
+            },
+            {
+              label: 'Azure Networking',
+              href: 'docs/azure-networking/index'
+            },
+          ]
+        },
+        {
           title: 'Community',
           items: [
             {
-              label: 'Teams',
-              href: 'https://teams.microsoft.com/l/channel/19%3a97f9e0c1df4749768074c8d1c3e3bf69%40thread.tacv2/General?groupId=59b14dcc-815c-413a-89b0-49a4228b1705&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47'
+              label: 'Join Us',
+              href: 'https://teams.microsoft.com/l/team/19%3a97f9e0c1df4749768074c8d1c3e3bf69%40thread.tacv2/conversations?groupId=59b14dcc-815c-413a-89b0-49a4228b1705&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47'
             },
           ]
         },
@@ -64,28 +77,14 @@ module.exports = {
               href: 'https://github.com/azure/demokit/'
             },
           ]
-        }
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Demo Kit Team. Built with Docusaurus.`
     }
   },
   plugins: [
-    /*
-    [require.resolve('@cmfcmf/docusaurus-search-local'), { // warning: Use '@cmfcmf/docusaurus-search-local' (without the require.resolve) if you use Docusaurus before v2.0.0-alpha.56
-      // Options here
-      docsBasePath: '/docs', // must correspond to the base path configured for the docs plugin
-      indexBlog: false, // whether to index blog pages
-      indexDocs: true, // whether to index docs pages
-      indexPages: false, // whether to index static pages
-      language: "en" // language of your documentation, see next section      
-    }]*/
   ],  
   scripts: [
-    {
-      src: 'js/fix-location.js',
-      async: false,
-      defer: false,
-    },
   ],
   presets: [
     [
