@@ -71,7 +71,7 @@ azure-vote-front            1/1     1            1           3d19h
 azure-vote-front-baseline   1/1     1            1           22m
 azure-vote-front-canary     1/1     1            1           22m
 ```
-### Roll back on Error
+### Rollback on Error
 1. Open URL https://github.com/devopsonazure/vote-github/edit/master/.github/workflows/build-deploy.yaml, append "_failed" into below highlighted line, change it to `${{secrets.REGISTRY_URL}}/${{env.IMAGE_NAME}}:${{ github.sha }}_failed`, then commit change to github, it will trigger a failed deployment
 ```yaml {11}
     - name: "Deploy azure vote front"
