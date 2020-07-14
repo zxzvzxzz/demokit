@@ -22,15 +22,21 @@ To use this demo, follow below steps to open 3 webpages
 
 ## Demo Steps
 ### Github Actions Pipeline
-1. Go to webpage 2, click edit icon and change TITLE from `Azure Voting App - Github Actions(v1)` to ` Azure Voting App - Github Actions(v2)`.
-<img alt="github-1" src={useBaseUrl('img/kubernetes-devops/github-1.png')}/>
+1. Open URL https://github.com/devopsonazure/vote-github/blob/master/azure-vote/config_file.cfg, click edit icon and change TITLE from `Azure Voting App - Github Actions(v1)` to ` Azure Voting App - Github Actions(v2)`.
+```txt {2}
+# UI Configurations
+TITLE = 'Azure Voting App - Github Actions(v1)'
+VOTE1VALUE = 'Cats'
+VOTE2VALUE = 'Dogs'
+SHOWHOST = 'false'
+```
 2. Click `Commit changes` button to commit the change.
 <img alt="github-2" src={useBaseUrl('img/kubernetes-devops/github-2.png')}/>
-3. Switch to webpage 3, refresh the page (might be multiple times), it will show github actions pipeline is started. It contains two actions, one is code scanning, another is build and deploy. 
+3. Open URL https://github.com/devopsonazure/vote-github/actions, refresh the page (might be multiple times), it should display github actions pipeline is started eventually. Two actions should be running, one is code scanning, another is build and deploy. 
 <img alt="github-3" src={useBaseUrl('img/kubernetes-devops/github-3.png')}/>
-4. Click `Build and deploy` action, it has two stages, one is build and another is deploy, explain to your customer what github actions are doing right now, basically, those actions include building code, pushing image to azure container registry, and deploying the imaging to AKS.
+4. Click `Build and deploy` action, it has two stages, one is build and another is deploy, explain to your customer what activities github action is doing right now, basically, `Build and deploy` action will build code, push image to azure container registry, and deploy image to AKS.
 <img alt="github-4" src={useBaseUrl('img/kubernetes-devops/github-4.png')}/>
-5. Once build & deploy is completed, go to webpage 1, refresh it, you will see the version is changed to `Azure Voting App – Github Actions(v2)`
+5. Once build & deploy is completed, open URL http://vote-github.k8s.devsecops.ink/, application's version should be changed to `Azure Voting App – Github Actions(v2)`
 <img alt="github-5" src={useBaseUrl('img/kubernetes-devops/github-5.png')}/>
 
 ### Canary Deployment on AKS
@@ -60,11 +66,11 @@ VOTE1VALUE = 'Cats'
 VOTE2VALUE = 'Dogs'
 SHOWHOST = 'false'
 ```
-3. Go to webpage 1, refresh page, the version of application should change to v3.
+3. Open URL http://vote-github.k8s.devsecops.ink/, application's version should be changed to v3.
 <img alt="github-8" src={useBaseUrl('img/kubernetes-devops/github-8.png')}/>
-4. Now, open a new browser and use in-private mode, paste and visit same URL from webpage 1, it should display v2.
+4. Now, open a new browser and use in-private mode, go to URL http://vote-github.k8s.devsecops.ink/, you will find application's version remains at v2.
 <img alt="github-9" src={useBaseUrl('img/kubernetes-devops/github-9.png')}/>
-5. This is because we have enabled canary deployment, both versions exist in same cluster, AKS will handle the requests and distribute them to different version of services.  From AKS backend, it has two deploys, highlighted in below
+5. This is because we have enabled canary deployment, version v2 and v3 are both exist in same cluster, AKS will handle the requests and distribute them to different version of services.  From AKS backend, it has two deploys, refer to highlighted lines in below
 ```sh {4,6}
 kubectl get deploy -n github 
 NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
@@ -74,8 +80,24 @@ azure-vote-front-baseline   1/1     1            1           22m
 azure-vote-front-canary     1/1     1            1           22m
 ```
 ### Roll back on error
-1. Visit URL https://github.com/devopsonazure/vote-github/edit/master/.github/workflows/build-deploy.yaml, add "_failed" into below line, then commit change to github, it will trigger a failed deployment
-<img alt="github-10" src={useBaseUrl('img/kubernetes-devops/github-10.png')}/>
-2. Go to https://github.com/devopsonazure/vote-github/actions, click the newest `Build and deploy` pipeline, wait for a while until the deployment get failed, show below screen to your customer, github actions pipeline will roll back on error to previous successful deployment.
+1. Open URL https://github.com/devopsonazure/vote-github/edit/master/.github/workflows/build-deploy.yaml, append "_failed" into below highlighted line, change it to `${{secrets.REGISTRY_URL}}/${{env.IMAGE_NAME}}:${{ github.sha }}_failed`, then commit change to github, it will trigger a failed deployment
+```yaml {11}
+    - name: "Deploy azure vote front"
+      uses: Azure/k8s-deploy@v1
+      timeout-minutes: 5
+      with:
+        namespace: ${{env.NAMESPACE}}
+        manifests: |
+          manifests/front.yml
+          manifests/service.yml
+          manifests/ingress.yml
+        images: |
+          ${{secrets.REGISTRY_URL}}/${{env.IMAGE_NAME}}:${{ github.sha }}
+        imagepullsecrets: |
+          acr-secret
+        #strategy: canary
+        #percentage: 100
+```
+2. Open URL https://github.com/devopsonazure/vote-github/actions, click the newest `Build and deploy` pipeline, wait for a while until the deployment get failed, show below screen to your customer, github actions pipeline will roll back on error to previous successful deployment.
 <img alt="github-11" src={useBaseUrl('img/kubernetes-devops/github-11.png')}/>
-3. Go to webpage 1, refresh, it proves the service is still running and not affected by failed deployment.
+3. Open URL http://vote-github.k8s.devsecops.ink/, the application is still running, it proves the service is not affected by failed deployment.
