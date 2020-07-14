@@ -2,6 +2,7 @@
 id: github
 title: "Github Actions"
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Github Actions Demo Scenarios
 Github devops demo leverages github actions to build application, generate docker image, push image to azure container registry, and deploy image to AKS. It includes below actions
@@ -22,25 +23,25 @@ To use this demo, follow below steps to open 3 webpages
 ## Demo Steps
 ### Github Actions Pipeline
 1. Go to webpage 2, click edit icon and change TITLE from `Azure Voting App - Github Actions(v1)` to ` Azure Voting App - Github Actions(v2)`.
-![github-1](../../img/kubernetes-devops/github-1.png)
+<img alt="github-1" src={useBaseUrl('img/kubernetes-devops/github-1.png')}/>
 2. Click `Commit changes` button to commit the change.
-![github-2](../../img/kubernetes-devops/github-2.png)
+<img alt="github-2" src={useBaseUrl('img/kubernetes-devops/github-2.png')}/>
 3. Switch to webpage 3, refresh the page (might be multiple times), it will show github actions pipeline is started. It contains two actions, one is code scanning, another is build and deploy. 
-![github-3](../../img/kubernetes-devops/github-3.png)
+<img alt="github-3" src={useBaseUrl('img/kubernetes-devops/github-3.png')}/>
 4. Click `Build and deploy` action, it has two stages, one is build and another is deploy, explain to your customer what github actions are doing right now, basically, those actions include building code, pushing image to azure container registry, and deploying the imaging to AKS.
-![github-4](../../img/kubernetes-devops/github-4.png)
+<img alt="github-4" src={useBaseUrl('img/kubernetes-devops/github-4.png')}/>
 5. Once build & deploy is completed, go to webpage 1, refresh it, you will see the version is changed to `Azure Voting App – Github Actions(v2)`
-![github-5](../../img/kubernetes-devops/github-5.png)
+<img alt="github-5" src={useBaseUrl('img/kubernetes-devops/github-5.png')}/>
 
 ### Canary Deployment on AKS
 1. Visit URL https://github.com/devopsonazure/vote-github/edit/master/.github/workflows/build-deploy.yaml, uncomment below lines then commit the change to github.
-![github-6](../../img/kubernetes-devops/github-6.png)
+<img alt="github-6" src={useBaseUrl('img/kubernetes-devops/github-6.png')}/>
 2. Visit URL https://github.com/devopsonazure/vote-github/blob/master/azure-vote/config_file.cfg, modify version to v3, then commit change。
-![github-7](../../img/kubernetes-devops/github-7.png)
+<img alt="github-7" src={useBaseUrl('img/kubernetes-devops/github-7.png')}/>
 3. Go to webpage 1, refresh page, the version of application should change to v3.
-![github-8](../../img/kubernetes-devops/github-8.png)
+<img alt="github-8" src={useBaseUrl('img/kubernetes-devops/github-8.png')}/>
 4. Now, open a new browser and use in-private mode, paste and visit same URL from webpage 1, it should display v2.
-![github-9](../../img/kubernetes-devops/github-9.png)
+<img alt="github-9" src={useBaseUrl('img/kubernetes-devops/github-9.png')}/>
 5. This is because we have enabled canary deployment, both versions exist in same cluster, AKS will handle the requests and distribute them to different version of services.  From AKS backend, it has two deploys
     ```sh
     kubectl get deploy -n github 
@@ -52,7 +53,7 @@ To use this demo, follow below steps to open 3 webpages
     ```
 ### Roll back on error
 1. Visit URL https://github.com/devopsonazure/vote-github/edit/master/.github/workflows/build-deploy.yaml, add "_failed" into below line, then commit change to github, it will trigger a failed deployment
-![github-10](../../img/kubernetes-devops/github-10.png)
+<img alt="github-10" src={useBaseUrl('img/kubernetes-devops/github-10.png')}/>
 2. Go to https://github.com/devopsonazure/vote-github/actions, click the newest `Build and deploy` pipeline, wait for a while until the deployment get failed, show below screen to your customer, github actions pipeline will roll back on error to previous successful deployment.
-![github-11](../../img/kubernetes-devops/github-11.png)
+<img alt="github-11" src={useBaseUrl('img/kubernetes-devops/github-11.png')}/>
 3. Go to webpage 1, refresh, it proves the service is still running and not affected by failed deployment.

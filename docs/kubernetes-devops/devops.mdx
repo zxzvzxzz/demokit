@@ -2,6 +2,7 @@
 id: "devops"
 title: "Azure DevOps"
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Azure DevOps Demo Scenarios
 Azure devops demo will use
@@ -15,17 +16,17 @@ To use this demo, follow below steps to open 3 webpages,
 
 ## Demo Steps
 1. Go to webpage 2, click edit icon and change TITLE from `Azure Voting App - Azure Devops Pipeline(v1)` to `Azure Voting App - Azure Devops Pipeline(v2)`
-![devops-1](../../img/kubernetes-devops/devops-1.png)
+<img alt="devops-1" src={useBaseUrl('img/kubernetes-devops/devops-1.png')}/>
 2. Click `Commit changes` button to commit the change
-![devops-2](../../img/kubernetes-devops/devops-2.png)
+<img alt="devops-2" src={useBaseUrl('img/kubernetes-devops/devops-2.png')}/>
 3. Switch to webpage 3, refresh the page (might be multiple times), it will display Azure devops pipeline is started eventually.
-![devops-3](../../img/kubernetes-devops/devops-3.png)
+<img alt="devops-3" src={useBaseUrl('img/kubernetes-devops/devops-3.png')}/>
 4. This is a multi-stages pipeline, it contains `Build stage` and `Deploy stage`
-![devops-4](../../img/kubernetes-devops/devops-4.png)
+<img alt="devops-4" src={useBaseUrl('img/kubernetes-devops/devops-4.png')}/>
 5. Click build and deploy stage, show it to your customer how  build & deploy stages look like
-![devops-5](../../img/kubernetes-devops/devops-5.png)
-![devops-6](../../img/kubernetes-devops/devops-6.png)
+<img alt="devops-5" src={useBaseUrl('img/kubernetes-devops/devops-5.png')}/>
+<img alt="devops-6" src={useBaseUrl('img/kubernetes-devops/devops-6.png')}/>
 6. Once build & deploy are done (everything is green), switch to webpage 1, refresh the page, it should change the title to 'Azure Voting App - Azure Devops Pipeline(v2)'
-![devops-7](../../img/kubernetes-devops/devops-7.png)
+<img alt="devops-7" src={useBaseUrl('img/kubernetes-devops/devops-7.png')}/>
 7. If your customer is interested in how 'Azure Devops Pipeline' looks like, you could open this [link](https://github.com/devopsonazure/vote-devops/blob/master/azure-pipelines.yml) to show pipeline definitions.
 
