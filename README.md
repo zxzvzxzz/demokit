@@ -1,46 +1,18 @@
 # README
 
-Welcome to Azure sales demo kit, this is public repo hosted our content.
+Welcome to Azure sales demo kit, this is public repo hosted our content. The public website is hosted in github pages, URL is https://azure.github.io/demokit
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
-## Installation
+## Build and run
 
-```
-$ yarn
-```
-
-## Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
-## Continuous Integration
-
-Some common defaults for linting/formatting have been set for you. If you integrate your project with an open source Continuous Integration system (e.g. Travis CI, CircleCI), you may check for issues using the following command.
-
-```
-$ yarn ci
-```
+To build the project, please follow below steps
+- The project is basically a website host our demokit content materials, it is based on static website generator Docusaurus  https://v2.docusaurus.io/
+- Install git windows client, https://git-scm.com/download/win (If you use Windows as client)
+- Install nodejs https://nodejs.org/en/download/
+- Install yarn https://classic.yarnpkg.com/en/
+- Run "git checkout https://github.com/azure/demokit"
+- Run "yarn start" to start the website locally
+- Run "git push" to push your changes to github, there is a pipeline implemented already, so the newest update will reflect at website https://azure.github.io/demokit
 
 # Contributing
 
