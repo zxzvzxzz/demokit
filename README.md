@@ -1,6 +1,6 @@
 # README
 
-Welcome to Azure sales demo kit, this is public repo hosted our content.
+Welcome to Azure sales demo kit, this is public repo hosted our content. The public website is hosted in github pages, URL is https://azure.github.io/demokit
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
 ## Build and run
