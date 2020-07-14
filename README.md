@@ -14,15 +14,6 @@ To build the project, please follow below steps
 - Run "yarn start" to start the website locally
 - Run "git push" to push your changes to github, there is a pipeline implemented already, so the newest update will reflect at website https://azure.github.io/demokit
 
-
-## Continuous Integration
-
-Some common defaults for linting/formatting have been set for you. If you integrate your project with an open source Continuous Integration system (e.g. Travis CI, CircleCI), you may check for issues using the following command.
-
-```
-$ yarn ci
-```
-
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
