@@ -1,4 +1,6 @@
 const { resolve } = require('path');
+const remarkExternalLinks = require('remark-external-links');
+
 
 module.exports = {
   title: 'Azure Sales Demo Kit',
@@ -99,6 +101,7 @@ module.exports = {
               }
             }
           },
+          remarkPlugins: [remarkExternalLinks],
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/azure/demokit/edit/master/'
         },
