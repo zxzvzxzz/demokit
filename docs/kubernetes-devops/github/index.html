@@ -11,17 +11,17 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172450760-1"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-172450760-1",{})</script>
-<link rel="search" type="application/opensearchdescription+xml" title="Azure Sales Demo Kit" href="/demokit/opensearch.xml"><title data-react-helmet="true">Github Actions | Azure Sales Demo Kit</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Github Actions | Azure Sales Demo Kit"><meta data-react-helmet="true" name="description" content="Github Actions Demo Scenarios"><meta data-react-helmet="true" property="og:description" content="Github Actions Demo Scenarios"><meta data-react-helmet="true" property="og:url" content="https://azure.github.io//demokit/docs/kubernetes-devops/github"><link data-react-helmet="true" rel="shortcut icon" href="/demokit/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://azure.github.io//demokit/docs/kubernetes-devops/github"><link rel="stylesheet" href="/demokit/styles.b381e5d4.css">
-<link rel="preload" href="/demokit/styles.0b3b2b18.js" as="script">
-<link rel="preload" href="/demokit/runtime~main.627fe05b.js" as="script">
-<link rel="preload" href="/demokit/main.5beb6fe6.js" as="script">
-<link rel="preload" href="/demokit/common.b36e15fc.js" as="script">
-<link rel="preload" href="/demokit/2.c618483d.js" as="script">
-<link rel="preload" href="/demokit/18.c6bbffce.js" as="script">
-<link rel="preload" href="/demokit/19.5b1acee5.js" as="script">
-<link rel="preload" href="/demokit/8f5690b9.1a0785ed.js" as="script">
-<link rel="preload" href="/demokit/17896441.7ef524e0.js" as="script">
-<link rel="preload" href="/demokit/e3df2e51.156cae3d.js" as="script">
+<link rel="search" type="application/opensearchdescription+xml" title="Azure Sales Demo Kit" href="/demokit/opensearch.xml"><title data-react-helmet="true">Github Actions | Azure Sales Demo Kit</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Github Actions | Azure Sales Demo Kit"><meta data-react-helmet="true" name="description" content="Github Actions Demo Scenarios"><meta data-react-helmet="true" property="og:description" content="Github Actions Demo Scenarios"><meta data-react-helmet="true" property="og:url" content="https://azure.github.io//demokit/docs/kubernetes-devops/github"><link data-react-helmet="true" rel="shortcut icon" href="/demokit/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://azure.github.io//demokit/docs/kubernetes-devops/github"><link rel="stylesheet" href="/demokit/styles.3bae52e5.css">
+<link rel="preload" href="/demokit/styles.0662f249.js" as="script">
+<link rel="preload" href="/demokit/runtime~main.7403ad4c.js" as="script">
+<link rel="preload" href="/demokit/main.6e8f544f.js" as="script">
+<link rel="preload" href="/demokit/common.fda475de.js" as="script">
+<link rel="preload" href="/demokit/2.c70536f9.js" as="script">
+<link rel="preload" href="/demokit/18.a46e127c.js" as="script">
+<link rel="preload" href="/demokit/19.4c1ea291.js" as="script">
+<link rel="preload" href="/demokit/8f5690b9.b140be44.js" as="script">
+<link rel="preload" href="/demokit/17896441.2b4e130e.js" as="script">
+<link rel="preload" href="/demokit/2a5ffa6d.2239ce31.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script><div id="__docusaurus">
@@ -36,15 +36,15 @@
 <img src="../../img/kubernetes-devops/github-9.png" alt="github-9"></li><li>This is because we have enabled canary deployment, both versions exist in same cluster, AKS will handle the requests and distribute them to different version of services.  From AKS backend, it has two deploys<div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">kubectl get deploy -n github </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">NAME                        READY   UP-TO-DATE   AVAILABLE   AGE</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">azure-vote-back             1/1     1            1           3d23h</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">azure-vote-front            1/1     1            1           3d19h</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">azure-vote-front-baseline   1/1     1            1           22m</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">azure-vote-front-canary     1/1     1            1           22m</span></div></div></div></div></div></li></ol><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="roll-back-on-error"></a>Roll back on error<a aria-hidden="true" tabindex="-1" class="hash-link" href="#roll-back-on-error" title="Direct link to heading">#</a></h3><ol><li>Visit URL <a href="https://github.com/devopsonazure/vote-github/edit/master/.github/workflows/build-deploy.yaml">https://github.com/devopsonazure/vote-github/edit/master/.github/workflows/build-deploy.yaml</a>, add &quot;_failed&quot; into below line, then commit change to github, it will trigger a failed deployment
 <img src="../../img/kubernetes-devops/github-10.png" alt="github-10"></li><li>Go to <a href="https://github.com/devopsonazure/vote-github/actions" target="_blank" rel="noopener noreferrer">https://github.com/devopsonazure/vote-github/actions</a>, click the newest <code>Build and deploy</code> pipeline, wait for a while until the deployment get failed, show below screen to your customer, github actions pipeline will roll back on error to previous successful deployment.
 <img src="../../img/kubernetes-devops/github-11.png" alt="github-11"></li><li>Go to webpage 1, refresh, it proves the service is still running and not affected by failed deployment.</li></ol></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/azure/demokit/edit/master/docs/kubernetes-devops/github.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/demokit/docs/kubernetes-devops/arc-for-kubernetes"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Arc for Kubernetes</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/demokit/docs/kubernetes-devops/devops"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Azure DevOps »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#github-actions-demo-scenarios" class="table-of-contents__link">Github Actions Demo Scenarios</a></li><li><a href="#demo-steps" class="table-of-contents__link">Demo Steps</a><ul><li><a href="#github-actions-pipeline" class="table-of-contents__link">Github Actions Pipeline</a></li><li><a href="#canary-deployment-on-aks" class="table-of-contents__link">Canary Deployment on AKS</a></li><li><a href="#roll-back-on-error" class="table-of-contents__link">Roll back on error</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="https://teams.microsoft.com/l/channel/19%3a97f9e0c1df4749768074c8d1c3e3bf69%40thread.tacv2/General?groupId=59b14dcc-815c-413a-89b0-49a4228b1705&amp;tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47" target="_blank" rel="noopener noreferrer" class="footer__link-item">Teams</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/azure/demokit/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 Demo Kit Team. Built with Docusaurus.</div></div></div></footer></div>
-<script src="/demokit/styles.0b3b2b18.js"></script>
-<script src="/demokit/runtime~main.627fe05b.js"></script>
-<script src="/demokit/main.5beb6fe6.js"></script>
-<script src="/demokit/common.b36e15fc.js"></script>
-<script src="/demokit/2.c618483d.js"></script>
-<script src="/demokit/18.c6bbffce.js"></script>
-<script src="/demokit/19.5b1acee5.js"></script>
-<script src="/demokit/8f5690b9.1a0785ed.js"></script>
-<script src="/demokit/17896441.7ef524e0.js"></script>
-<script src="/demokit/e3df2e51.156cae3d.js"></script>
+<script src="/demokit/styles.0662f249.js"></script>
+<script src="/demokit/runtime~main.7403ad4c.js"></script>
+<script src="/demokit/main.6e8f544f.js"></script>
+<script src="/demokit/common.fda475de.js"></script>
+<script src="/demokit/2.c70536f9.js"></script>
+<script src="/demokit/18.a46e127c.js"></script>
+<script src="/demokit/19.4c1ea291.js"></script>
+<script src="/demokit/8f5690b9.b140be44.js"></script>
+<script src="/demokit/17896441.2b4e130e.js"></script>
+<script src="/demokit/2a5ffa6d.2239ce31.js"></script>
 </body>
 </html>
