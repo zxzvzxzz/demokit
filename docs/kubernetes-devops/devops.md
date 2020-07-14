@@ -13,7 +13,7 @@ To use this demo, follow below steps to open 3 webpages,
 2. Open [webpage 2](https://github.com/devopsonazure/vote-devops/blob/master/azure-vote/config_file.cfg), this is sample application configuration file, we are going to change the configuration, rebuild and deploy it to AKS.
 3. Open [webpage 3](https://dev.azure.com/pipelineonazure/vote-devops/_build), this is Azure devops pipeline, we use this page to show how build & deploy works here.
 
-## Demo steps
+## Demo Steps
 1. Go to webpage 2, click edit icon and change TITLE from `Azure Voting App - Azure Devops Pipeline(v1)` to `Azure Voting App - Azure Devops Pipeline(v2)`
 ![devops-1](../../img/kubernetes-devops/devops-1.png)
 2. Click `Commit changes` button to commit the change
