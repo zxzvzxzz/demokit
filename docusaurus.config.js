@@ -15,12 +15,11 @@ module.exports = {
     gtag: {
       trackingID: 'UA-172450760-1',
     },
-    /*
     algolia: {
       apiKey: '2ac9cee50307ec8a361cee9a88ad988d',
       indexName: 'demokit',
       algoliaOptions: {},
-    },*/
+    },
     navbar: {
       "title": "Azure Sales Demo Kit",
       logo: {
@@ -71,23 +70,22 @@ module.exports = {
     }
   },
   plugins: [
+    /*
     [require.resolve('@cmfcmf/docusaurus-search-local'), { // warning: Use '@cmfcmf/docusaurus-search-local' (without the require.resolve) if you use Docusaurus before v2.0.0-alpha.56
       // Options here
       docsBasePath: '/docs', // must correspond to the base path configured for the docs plugin
       indexBlog: false, // whether to index blog pages
       indexDocs: true, // whether to index docs pages
       indexPages: false, // whether to index static pages
-      // /404.html is never indexed
       language: "en" // language of your documentation, see next section      
-    }]
+    }]*/
   ],  
   scripts: [
-    /*
     {
       src: 'js/fix-location.js',
       async: false,
       defer: false,
-    },*/
+    },
   ],
   presets: [
     [
