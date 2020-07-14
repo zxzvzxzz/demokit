@@ -79,7 +79,7 @@ module.exports = {
           ]
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Demo Kit Team. Built with Docusaurus.`
+      copyright: `Copyright © ${new Date().getFullYear()} Demo Kit Team.`
     }
   },
   plugins: [

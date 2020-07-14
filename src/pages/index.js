@@ -41,14 +41,11 @@ const features = [
     ),
   },
   {
-    title: <>Kubernetes DevOps Demo</>,
+    title: <>More</>,
     imageUrl: 'img/more-options.svg',
     description: (
       <>
         Ready to rock & roll - VIEW DEMOS!
-        <Button>
-          <Link to="./docs/kubernetes-devops/index">Go</Link>
-        </Button>                
       </>
     ),
   },
