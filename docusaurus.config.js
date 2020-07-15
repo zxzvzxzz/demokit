@@ -18,8 +18,8 @@ module.exports = {
       trackingID: 'UA-172450760-1',
     },
     algolia: {
-      apiKey: '2ac9cee50307ec8a361cee9a88ad988d',
-      indexName: 'demokit',
+      apiKey: 'ec5fb48114a0ca5a8175f96454ed7221',
+      indexName: 'azure_demokit',
       algoliaOptions: {},
     },
     navbar: {
