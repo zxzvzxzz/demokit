@@ -8,6 +8,8 @@ module.exports = {
         'kubernetes-devops/github',
         'kubernetes-devops/devops',
         'kubernetes-devops/argocd',
+        'kubernetes-devops/jenkins-x',
+        'kubernetes-devops/flagger',
       ]
     },
     {
