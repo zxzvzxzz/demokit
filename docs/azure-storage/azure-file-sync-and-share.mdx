@@ -88,9 +88,9 @@ Got answer (103 bytes):
     - File test.txt is modified in location X, and given LastWriteTime of 1:00
     - File test.txt is modified in location Y, and given LastWriteTime of 1:05
     - When conflict resolution happens, the file content from 1:05 will be get to keep the filename test.txt
-    - The file content from 1:00 will become a 'conflict file', and given the name test-\<MachineName\>.txt
-    - The \<MachineName\> is the name of the server which produced the change from 1:00
-    - If the change came from a direct write to the cloud share, it will be given the name \<MachineName\> will be "Cloud"
+    - The file content from 1:00 will become a 'conflict file', and given the name `test-<MachineName>.txt`
+    - The `<MachineName>` is the name of the server which produced the change from 1:00
+    - If the change came from a direct write to the cloud share, it will be given the name `<MachineName>` will be "Cloud"
 
 7. To explain how azure file sync handles conflict, open test.txt from `\\dc\share` and `\\howdyfiles.file.core.windows.net` seperately, append a line "local" to test.txt opened from `\\dc\share`, then press Ctrl+S to save the change, append a line "cloud" to test.txt opened from `\\howdyfiles.file.core.windows.net`, then press Ctrl+S to save the change. 
 
