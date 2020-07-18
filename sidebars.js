@@ -18,6 +18,12 @@ module.exports = {
         'azure-networking/hub-spoke',
       ]
     },
+    {
+      'Azure Storage': [
+        'azure-storage/index',
+        'azure-storage/azure-file-sync-and-share',
+      ]
+    },
 
   ]
 };
