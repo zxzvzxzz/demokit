@@ -24,6 +24,11 @@ module.exports = {
         'azure-storage/azure-file-sync-and-share',
       ]
     },
+    {
+      'Azure with Reports': [
+        'azure-usageAndquota/index'
+      ]
+    }
 
   ]
 };
