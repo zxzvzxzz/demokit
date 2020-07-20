@@ -26,7 +26,7 @@ module.exports = {
     },
     {
       'Azure with Reports': [
-        'azure-usageAndquota/index'
+        'azure-usage-and-quota/index'
       ]
     }
 
