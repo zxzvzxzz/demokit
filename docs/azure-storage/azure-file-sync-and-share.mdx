@@ -34,6 +34,11 @@ Click each resource group and show it to your customer how it looks like
 
 6. Try create, modify and delete any files or folders, the experience is similar just like using an on-premises file server.
 
+## Azure File Share Access Logs
+Azure Storage logs in Azure Monitor is in public preview and is available for preview testing in all public cloud regions. To enroll this feature, please use this [link](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxW65f1VQyNCuBHMIMBV8qlUM0E0MFdPRFpOVTRYVklDSE1WUTcyTVAwOC4u), for more details of Azure storage logs, please refer to [Monitor Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/monitor-storage?tabs=azure-powershell).
+The demo stroage account `howdyfiles` has access logs enabled already, 
+<img alt="azure-file-14" src={useBaseUrl('img/azure-storage/azure-file-14.png')}/>
+
 ## Azure File Share Private Endpoint
 1. Azure Private Endpoint is a network interface that connects you privately and securely to a service powered by Azure Private Link. Private Endpoint uses a private IP address from your VNet, effectively bringing the service into your VNet. The service will be only available and accessible from your private network address space, if ExpressRouter/VPN connection is established between your on-premises network and Azure virtual network, you can access private endpoint from on-premises as well. In this demo, we will use Azure file share private endpoint as an example to show how it works.
 
@@ -97,7 +102,3 @@ Got answer (103 bytes):
 
 8. The file share used in this demo has [snapshot](https://docs.microsoft.com/en-us/azure/storage/files/storage-snapshots-files) created, hence Windows explorer folder/file "Previous Versions" is available when connecting directly to the Azure File Share. To demo it, right click any folder under `\\howdyfiles.file.core.windows.net\share`, choose "Previous Versions", it will list folder/file previous versions based on snapshots in Azure file share.
 <img alt="azure-file-13" src={useBaseUrl('img/azure-storage/azure-file-13.png')}/>
-
-
-
-
