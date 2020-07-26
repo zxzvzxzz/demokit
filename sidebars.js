@@ -16,6 +16,7 @@ module.exports = {
       'Azure Networking': [
         'azure-networking/index',
         'azure-networking/hub-spoke',
+        'azure-networking/IPv6'
       ]
     },
     {
