@@ -1,0 +1,364 @@
+[33mcommit 92b3777afaf631471570e085b8cc28666f2e4d2b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 97306e0 5c7c7de
+Author: zx <zxzvzxzz@foxmail.com>
+Date:   Sun Jul 26 22:07:52 2020 +0800
+
+    Merge pull request #2 from Azure/master
+    
+    sync
+
+[33mcommit 5c7c7de1b61efa04ad225724af124fe2d23d3c07[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Tue Jul 21 21:42:25 2020 +0800
+
+    add azure file share access logs
+
+[33mcommit c11a3a9f8785be130f4b35ba5a2630bc29a1fe10[m
+Author: seanlaser <32789617+seanlaser@users.noreply.github.com>
+Date:   Mon Jul 20 22:24:29 2020 +0800
+
+    Update IPv6.mdx
+    
+    fixed link markdown syntax
+
+[33mcommit 13ee8a23a5614d5594bdb7dcb64eaacb233f93ef[m
+Author: seanlaser <32789617+seanlaser@users.noreply.github.com>
+Date:   Mon Jul 20 22:22:46 2020 +0800
+
+    Update IPv6.mdx
+    
+    fixed markdown syntax
+
+[33mcommit 5202ed43d86226110c9f7cb45846903e236f2ad5[m
+Author: seanlaser <32789617+seanlaser@users.noreply.github.com>
+Date:   Mon Jul 20 22:18:06 2020 +0800
+
+    Update IPv6.mdx
+    
+    minor words fix
+
+[33mcommit cce732fa1ba79e39ba8f79f1c0f91c1fc6f68443[m
+Author: seanlaser <32789617+seanlaser@users.noreply.github.com>
+Date:   Mon Jul 20 22:12:26 2020 +0800
+
+    Update IPv6.mdx
+    
+    Minor fix words. Add Demo Highlights
+
+[33mcommit 5c2b7cdbb5ea5266f1f00433e64c7317071d73ba[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Mon Jul 20 21:07:39 2020 +0800
+
+    Update file share demo
+
+[33mcommit 426aa478f7dd1fad31876f4a5ddbdc8aad277aa3[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Mon Jul 20 20:58:19 2020 +0800
+
+    Fix IPV6 compile issue and added snapshot to file share demo
+
+[33mcommit acffc7968998b399c0cd314fe4ef8f55da4c159f[m
+Author: seanlaser <32789617+seanlaser@users.noreply.github.com>
+Date:   Mon Jul 20 14:14:40 2020 +0800
+
+    Update IPv6.mdx
+    
+    fix some of the spelling
+
+[33mcommit 9dd799cb3f64d4114be82b36d1b01376cce77dff[m
+Author: seanlaser <32789617+seanlaser@users.noreply.github.com>
+Date:   Mon Jul 20 13:01:30 2020 +0800
+
+    Update IPv6.mdx
+    
+    Add Demo Scenarios
+
+[33mcommit 9f75680172c173e9296e8efc468ad7545776006e[m
+Author: seanlaser <32789617+seanlaser@users.noreply.github.com>
+Date:   Mon Jul 20 12:24:57 2020 +0800
+
+    Create IPv6.mdx
+    
+    Add "duel stack IPv6 website" demo kit doc page
+
+[33mcommit 6cad99eae4ad16e8a7601dd6018f2ddae9d1e888[m
+Author: zx <zxzvzxzz@foxmail.com>
+Date:   Mon Jul 20 12:08:57 2020 +0800
+
+    Add IPV6 Page
+    
+    Sean will do it
+
+[33mcommit 11cca4abc925d9ab9ea4914d7df07247b69a2601[m
+Merge: 4e5db65 97306e0
+Author: zx <zxzvzxzz@foxmail.com>
+Date:   Mon Jul 20 11:22:19 2020 +0800
+
+    Merge pull request #3 from zxzvzxzz/master
+    
+    Change usage and quota chapter directory name
+
+[33mcommit 97306e0928040d52b5f831b177cad7c64918e704[m
+Author: Xin Zhang <zhaxin@microsoft.com>
+Date:   Mon Jul 20 11:11:29 2020 +0800
+
+    change the path of usage and quota chapter
+
+[33mcommit e75237c15f1fe19ad02c929bd42ce9b155a4215d[m
+Merge: de45334 4e5db65
+Author: zx <zxzvzxzz@foxmail.com>
+Date:   Mon Jul 20 11:03:36 2020 +0800
+
+    Merge pull request #1 from Azure/master
+    
+    merge new update
+
+[33mcommit 4e5db654f1158065df3738e8c501046766c65730[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Mon Jul 20 10:30:34 2020 +0800
+
+    Revert to original
+
+[33mcommit 8162bcec8486a9be374c4c77475fb4a6e5d74f29[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Mon Jul 20 10:22:54 2020 +0800
+
+    demo purpose
+
+[33mcommit 90b18e224e8de6bfafd3b87d9ab115201ffcdaf2[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Mon Jul 20 10:21:16 2020 +0800
+
+    Demo sample
+
+[33mcommit da56897af107b18b09687862f8247cf9d4c9ce1f[m
+Merge: eb76498 de45334
+Author: Yingting <huangyingting@outlook.com>
+Date:   Mon Jul 20 09:21:10 2020 +0800
+
+    Merge pull request #2 from zxzvzxzz/master
+    
+    add Azure usage and quota chapter as part of azure reports
+
+[33mcommit de45334d6b25856115539424cdbe69e5a8374ee9[m
+Author: zx <zxzvzxzz@foxmail.com>
+Date:   Sun Jul 19 22:26:11 2020 +0800
+
+    Update index.mdx
+
+[33mcommit 6a6f326ccc7d5e14c48fdcd1a9273d8c3a8151dd[m
+Author: Xin Zhang <zhaxin@microsoft.com>
+Date:   Sun Jul 19 22:15:55 2020 +0800
+
+    add Azure usage and quota chapter as part of azure reports
+
+[33mcommit 72ceffa9e31db764f4bfc49c2e283e148342af16[m
+Author: Xin Zhang <zhaxin@microsoft.com>
+Date:   Sun Jul 19 22:05:56 2020 +0800
+
+    add Azure usage and quota chapter
+
+[33mcommit eb764983ade766cdb5e955cf7b09337115d7d9a3[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Sat Jul 18 14:45:56 2020 +0800
+
+    Updated file share demo
+
+[33mcommit cbacfad044002dc69fca24a58f4b917f3ee190e0[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Sat Jul 18 14:35:21 2020 +0800
+
+    Update file sync doc
+
+[33mcommit ef019e42aac4e857a5c97248524262049d6fde38[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Sat Jul 18 14:27:50 2020 +0800
+
+    Add file share demo
+
+[33mcommit 7ac2989e53533fd4b2f68be05d830cd143ed084a[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Thu Jul 16 11:42:45 2020 +0800
+
+    remove iot example
+
+[33mcommit 88a4b9bb3363ed324c15ae12b1e2a7da354f86f9[m
+Author: Yingting Huang <ythuang@microsoft.com>
+Date:   Wed Jul 15 20:43:10 2020 +0800
+
+    Add search
+
+[33mcommit 5a56534f8db310bea48bbbe829e5120466d54d8e[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Wed Jul 15 09:27:23 2020 +0800
+
+    Update docs
+
+[33mcommit e2f816918e343e0fa01a30d0cbbfdc31f00942fe[m
+Merge: dbf3bc5 6b7e7e9
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 21:58:55 2020 +0800
+
+    Merge branch 'master' of https://github.com/Azure/demokit
+
+[33mcommit dbf3bc570eec0918cc11feb677f93401a0f5a97c[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 21:57:55 2020 +0800
+
+    Update kubernetes demo document
+
+[33mcommit 6b7e7e9cacf377c4c4eeff7bf5df22d4b9109a45[m
+Author: Yingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 21:09:08 2020 +0800
+
+    Update README.md
+
+[33mcommit b029e04cffa5b69d1a246f6d9b44183ac922c00f[m
+Author: Yingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 21:08:42 2020 +0800
+
+    Update README.md
+
+[33mcommit b0c8e48d1b0bead591e67500b559412a96aab2f4[m
+Author: Yingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 21:07:29 2020 +0800
+
+    Update README.md
+
+[33mcommit 0a4e8d8f8c4b3290b4c193fefd7ebe15d2ab1fb1[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 21:00:21 2020 +0800
+
+    Fix minor issue
+
+[33mcommit de0e93fd02fb7df4b3ce2b5cc7e9e3f7cc7e7566[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 18:36:55 2020 +0800
+
+    Fine tune github demo
+
+[33mcommit 8407ae75c23805c326ab2f602bc0183a68c16d56[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 18:35:34 2020 +0800
+
+    Fine tune github demo
+
+[33mcommit 004ae2eccdf2eb27335da715a25bb6f0e9edb3d3[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 18:32:02 2020 +0800
+
+    Fine tune github demo
+
+[33mcommit a146efd0dc4a8d2b5aaf28385122a0c429f25cf5[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 17:53:26 2020 +0800
+
+    Open external link in new tab
+
+[33mcommit a43eeb4880cc4b025d7100d0cf65352942490e2c[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 16:50:00 2020 +0800
+
+    Fixed minor issues
+
+[33mcommit 8185bfbcdc4e70eef999aa91d7186c5d20585e40[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 14:43:00 2020 +0800
+
+    Update footer
+
+[33mcommit b3b1b7a1cdd376b707b15eb812200edb982377aa[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 14:23:24 2020 +0800
+
+    update to mdx, fix relative url issue
+
+[33mcommit 0968b05b731ee14d52467bce3ece4920eac3005d[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 12:48:49 2020 +0800
+
+    Remove local search
+
+[33mcommit a2d7629bc542341280fc6422854c1690e93a0a6e[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 12:44:34 2020 +0800
+
+    local search path fix
+
+[33mcommit a5707b21486ddf5b63d8503861e60417e9a3ab69[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 12:41:15 2020 +0800
+
+    Add local search
+
+[33mcommit 6035c896c9ddff1d376c9fd7e3d50ae21482adf2[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 11:48:09 2020 +0800
+
+    update networking demo
+
+[33mcommit 7e52ae898bebd7be1e8dc66279ddcacb3c7747d7[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Tue Jul 14 10:16:30 2020 +0800
+
+    Added ArgoCD demo
+
+[33mcommit 54ce4e6c5c4db390a7af3f83e4fd0b3cbcfd290b[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Mon Jul 13 21:29:59 2020 +0800
+
+    Add kubernetes devops demo doc
+
+[33mcommit 15cff7911656a12eb598f9eee21519a53c3fcc0f[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Mon Jul 13 16:47:36 2020 +0800
+
+    Add github actions to automatically publish to github pages
+
+[33mcommit 77dfcb532bf215abcccfc6ab9d5beb8da720b88c[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Mon Jul 13 16:45:07 2020 +0800
+
+    Add github actions to automatically publish to github pages
+
+[33mcommit 0d10f49d1e4f0e5357c3a2094d88a0112d23bb9d[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Mon Jul 13 16:42:42 2020 +0800
+
+    Add github actions to automatically publish to github pages
+
+[33mcommit ad396a7729896c90b8fbbb55253f1f94d1b8da73[m
+Author: huangyingting <huangyingting@outlook.com>
+Date:   Mon Jul 13 16:20:32 2020 +0800
+
+    Initial commit
+
+[33mcommit cc80106620062a1352243b30c6ed0d04534d1e77[m
+Author: Microsoft Open Source <microsoftopensource@users.noreply.github.com>
+Date:   Mon Jul 13 01:14:15 2020 -0700
+
+    Initial LICENSE-CODE commit
+
+[33mcommit 98a8e7b156156366b59aa8720fed9ad2221a3dd0[m
+Author: Microsoft Open Source <microsoftopensource@users.noreply.github.com>
+Date:   Mon Jul 13 01:14:14 2020 -0700
+
+    Initial SECURITY.md commit
+
+[33mcommit f42d99c016d4bc207da9f89fcac92f96956de0ac[m
+Author: Microsoft Open Source <microsoftopensource@users.noreply.github.com>
+Date:   Mon Jul 13 01:14:12 2020 -0700
+
+    Initial README.md commit
+
+[33mcommit bb64f269aa16dcc6fa01e3678bf7d9b77ec12fdf[m
+Author: Microsoft Open Source <microsoftopensource@users.noreply.github.com>
+Date:   Mon Jul 13 01:14:11 2020 -0700
+
+    Initial LICENSE commit
+
+[33mcommit 554356e2227ec816c1406cb2a7a398b4924da582[m
+Author: Microsoft Open Source <microsoftopensource@users.noreply.github.com>
+Date:   Mon Jul 13 01:14:10 2020 -0700
+
+    Initial CODE_OF_CONDUCT.md commit

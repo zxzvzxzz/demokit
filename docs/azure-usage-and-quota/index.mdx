@@ -24,4 +24,13 @@ as a customer, once I want to get the ratio of Usage to Quota, on the Azure port
 
 
 ## how to implement it 
+
+- create Runbook to schedule the process 
+Azure Automation runbooks can be created through Azure. This method provides a browser-based user interface for creating Automation runbooks. In this quickstart you walk through creating, editing, testing, and publishing an Automation PowerShell runbook.
+[Create an Azure Automation runbook](https://docs.microsoft.com/en-us/azure/automation/automation-quickstart-create-runbook)
+  - Create RunBook for PowerShell
+<img alt="report-2" src={useBaseUrl('img/azure-usage-and-quota/CreateRunbook.png')}/>
+  - Grant RunBook Service Principal permission 
+<img alt="report-2" src={useBaseUrl('img/azure-usage-and-quota/UsageAndQuotaRole.png')}/>
+  - RunBook script to create a storage account to save the scanned usage/quota data，and set the schedule
 Runbook + scripts .....................will be updated soon
